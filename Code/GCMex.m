@@ -28,3 +28,15 @@
 %   ENERGYAFTER:: The energy of the final labels LABELS
 %
 % How do I know if I should use swap or expansion? From GC_README.txt: 
+%   The expansion algorithm for energy minimization can be used
+%   whenever for any 3 labels a,b,c V(a,a) + V(b,c) <= V(a,c)+V(b,a).
+%   In other words, expansion algorithm can be used if the binary
+%   energy for the expansion algorithm step is regular, using V.
+%   Kolmogorov's terminology.
+%
+%   The swap algorithm for energy minimization can be used whenever
+%   for any 2 labels a,b V(a,a) + V(b,b) <= V(a,b)+V(b,a). In other
+%   words, swap algorithm can be used if the binary energy for the
+%   swap algorithm step is regular, using V. Kolmogorov's terminology.
+%
+% GCMex Version 2.3.0
