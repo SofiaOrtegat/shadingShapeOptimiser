@@ -1,4 +1,5 @@
 
 W = 10;
 H = 5;
-s
+segclass = zeros(50,1);
+pairwi
