@@ -9,4 +9,5 @@ labelcost = min(4, (X - Y).*(X - Y));
 %labelcost = zeros(7,7);
 
 for row = 0:H-1
-  f
+  for col = 0:W-1
+    pixel = 1+
