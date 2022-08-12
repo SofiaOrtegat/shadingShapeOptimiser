@@ -13,4 +13,5 @@ for row = 0:H-1
     pixel = 1+ row*W + col;
     if row+1 < H, pairwise(pixel, 1+col+(row+1)*W) = 1; end
     if row-1 >= 0, pairwise(pixel, 1+col+(row-1)*W) = 1; end 
-    if col+1 < W, pairwise(pixel, 1+(col+1)+
+    if col+1 < W, pairwise(pixel, 1+(col+1)+row*W) = 1; end
+    if col-1 >= 
