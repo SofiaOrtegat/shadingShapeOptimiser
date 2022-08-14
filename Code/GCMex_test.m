@@ -16,3 +16,4 @@ for row = 0:H-1
     if col+1 < W, pairwise(pixel, 1+(col+1)+row*W) = 1; end
     if col-1 >= 0, pairwise(pixel, 1+(col-1)+row*W) = 1; end 
     if pixel < 25
+      unary(:,pixel) = [0 10 
