@@ -18,4 +18,6 @@ for row = 0:H-1
     if pixel < 25
       unary(:,pixel) = [0 10 10 10 10 10 10]'; 
     else
-      unary(:,pixel) = [10 10 10 10 0 1
+      unary(:,pixel) = [10 10 10 10 0 10 10]'; 
+    end
+  en
