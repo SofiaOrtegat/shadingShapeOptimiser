@@ -23,4 +23,4 @@ for row = 0:H-1
   end
 end
 
-[labels E Eafter] = 
+[labels E Eafter] = GCMex(segclass, single
