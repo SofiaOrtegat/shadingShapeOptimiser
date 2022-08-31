@@ -20,4 +20,7 @@ for row = 0:H-1
     else
       unary(:,pixel) = [10 10 10 10 0 10 10]'; 
     end
-  en
+  end
+end
+
+[labels E Eafter] = 
