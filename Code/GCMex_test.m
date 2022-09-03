@@ -23,4 +23,6 @@ for row = 0:H-1
   end
 end
 
-[labels E Eafter] = GCMex(segclass, single(unary), pairwise, si
+[labels E Eafter] = GCMex(segclass, single(unary), pairwise, single(labelcost),0);
+
+fprin
