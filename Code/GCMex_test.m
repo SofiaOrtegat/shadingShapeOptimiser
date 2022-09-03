@@ -25,4 +25,4 @@ end
 
 [labels E Eafter] = GCMex(segclass, single(unary), pairwise, single(labelcost),0);
 
-fprin
+fprintf('E: %d (should be 260
