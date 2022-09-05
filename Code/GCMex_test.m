@@ -26,4 +26,5 @@ end
 [labels E Eafter] = GCMex(segclass, single(unary), pairwise, single(labelcost),0);
 
 fprintf('E: %d (should be 260), Eafter: %d (should be 44)\n', E, Eafter);
-fprintf('unique(labels) should be
+fprintf('unique(labels) should be [0 4] and is: [');
+fpri
