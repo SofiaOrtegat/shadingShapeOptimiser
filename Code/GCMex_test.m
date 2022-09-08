@@ -27,4 +27,4 @@ end
 
 fprintf('E: %d (should be 260), Eafter: %d (should be 44)\n', E, Eafter);
 fprintf('unique(labels) should be [0 4] and is: [');
-fpri
+fprintf('%d ', unique(label
