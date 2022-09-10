@@ -1,1 +1,2 @@
-function lightImg = diffuseLig
+function lightImg = diffuseLight(surfaceNormal)
+[m, 
