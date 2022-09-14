@@ -1,2 +1,2 @@
 function lightImg = diffuseLight(surfaceNormal)
-[m, 
+[m, n, ~] = size(surfac
