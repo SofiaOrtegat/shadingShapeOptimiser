@@ -6,4 +6,5 @@ normal = zeros(3,1);
 for i = 1:m
     for j = 1:n
         normal(:,1) = surfaceNormal(i, j, :);
-        lightImg(
+        lightImg(i, j) = light*normal;
+    
