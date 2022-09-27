@@ -7,4 +7,6 @@ for i = 1:m
     for j = 1:n
         normal(:,1) = surfaceNormal(i, j, :);
         lightImg(i, j) = light*normal;
-    
+    end
+end
+imshow(uint8(lightImg
