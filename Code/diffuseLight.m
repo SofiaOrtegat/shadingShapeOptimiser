@@ -9,4 +9,5 @@ for i = 1:m
         lightImg(i, j) = light*normal;
     end
 end
-imshow(uint8(lightImg
+imshow(uint8(lightImg*160));
+end
