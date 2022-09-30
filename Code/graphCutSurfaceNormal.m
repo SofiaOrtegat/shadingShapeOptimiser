@@ -34,3 +34,20 @@ for row = 0:H-1
         Na = segclass(pixel);
         Nb = segclass(1+col+(row+1)*W);
         ico = Icosahedron(Na, :) - Icosahedron(Nb, :);
+        ico = sqrt(ico*ico');
+        pairwise(pixel, 1+col+(row+1)*W) = lambda * log(1 + ico/sigma);
+    end
+    
+    if row-1 >= 0 
+        Na = segclass(pixel);
+        Nb = segclass(1+col+(row-1)*W);
+        ico = Icosahedron(Na, :) - Icosahedron(Nb, :);
+        ico = sqrt(ico*ico');
+        pairwise(pixel, 1+col+(row-1)*W) = lambda * log(1 + ico/sigma); 
+    end
+    
+    if col+1 < W 
+        Na = segclass(pixel);
+        Nb = segclass(1+(col+1)+row*W);
+        ico = Icosahedron(Na, :) - Icosahedron(Nb, :);
+        ico = sqrt(ico*ico');
