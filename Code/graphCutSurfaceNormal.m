@@ -71,3 +71,26 @@ end
 
 for i = 1:sIco
     for j = 1:sIco
+        Sij = Icosahedron(i, :) - Icosahedron(j, :);
+        Sij = sqrt(Sij*Sij');
+        K = 1 + epsilon - exp(-(2-Sij)/sigma^2);
+        labelcost(i, j) = lambda*K*Sij;
+    end
+end
+
+
+toc;
+
+tic;
+segclass = segclass - 1;
+[labels, ~, ~] = GCMex(segclass, single(unary), pairwise, single(labelcost), 1);
+labels = labels + 1;
+toc;
+
+labels = reshape(labels, W, H);
+newSurfaceNormal = zeros(W, H, 3);
+
+for i = 1:W
+    for j = 1:H
+        newSurfaceNormal(i, j, :) = Icosahedron(labels(i,j), :);
+    end
