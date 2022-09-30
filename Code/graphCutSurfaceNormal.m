@@ -51,3 +51,23 @@ for row = 0:H-1
         Nb = segclass(1+(col+1)+row*W);
         ico = Icosahedron(Na, :) - Icosahedron(Nb, :);
         ico = sqrt(ico*ico');
+        pairwise(pixel, 1+(col+1)+row*W) = lambda * log(1 + ico/sigma); 
+    end
+    
+    if col-1 >= 0 
+        Na = segclass(pixel);
+        Nb = segclass(1+(col-1)+row*W);
+        ico = Icosahedron(Na, :) - Icosahedron(Nb, :);
+        ico = sqrt(ico*ico');
+        pairwise(pixel, 1+(col-1)+row*W) = lambda * log(1 + ico/sigma); 
+    end 
+    
+    for i = 1:sIco
+        ico = Icosahedron(i, :) - Icosahedron(segclass(pixel)+1, :);
+        unary(i,pixel) = sqrt(ico*ico');
+    end
+  end
+end
+
+for i = 1:sIco
+    for j = 1:sIco
