@@ -94,3 +94,6 @@ for i = 1:W
     for j = 1:H
         newSurfaceNormal(i, j, :) = Icosahedron(labels(i,j), :);
     end
+end
+
+end
