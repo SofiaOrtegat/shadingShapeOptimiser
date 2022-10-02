@@ -1,1 +1,1 @@
-function output
+function output = icosahedron(subdivider) 
