@@ -1,1 +1,1 @@
-function output = icosahedron(subdivider) 
+function output = icosahedron(subdivider) % subdivide surface of icosah
