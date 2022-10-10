@@ -1,1 +1,2 @@
-function output = icosahedron(subdivider) % subdivide surface of icosah
+function output = icosahedron(subdivider) % subdivide surface of icosahedron, smaller -> finer
+t 
