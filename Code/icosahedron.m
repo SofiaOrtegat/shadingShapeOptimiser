@@ -4,4 +4,5 @@ a = sqrt(t)/5^(1/4);
 b = 1/(sqrt(t)*5^(1/4));
 c = a+2*b;
 d = a+b;
-x =  [0;0;0;0;b;-b;b;-b;a;a;-a;-a]; % verti
+x =  [0;0;0;0;b;-b;b;-b;a;a;-a;-a]; % vertices of icosaherdron
+y =  [
