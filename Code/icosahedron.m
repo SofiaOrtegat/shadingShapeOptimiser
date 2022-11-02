@@ -6,4 +6,5 @@ c = a+2*b;
 d = a+b;
 x =  [0;0;0;0;b;-b;b;-b;a;a;-a;-a]; % vertices of icosaherdron
 y =  [a;a;-a;-a;0;0;0;0;b;-b;b;-b];
-z =  [b;-b;b;-b;a;a;-a;
+z =  [b;-b;b;-b;a;a;-a;-a;0;0;0;0];
+mx = [d;d;d;d;-d;-d;-d
