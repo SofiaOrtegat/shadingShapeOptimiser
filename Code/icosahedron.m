@@ -11,4 +11,4 @@ mx = [d;d;d;d;-d;-d;-d;-d;0;0;0;0;c;-c;c;-c;a;a;-a;-a]/3; % midpoint extension
 my = [d;-d;d;-d;d;-d;d;-d;a;a;-a;-a;0;0;0;0;c;-c;c;-c]/3;
 mz = [d;d;-d;-d;d;d;-d;-d;c;-c;c;-c;a;a;-a;-a;0;0;0;0]/3;
 
-%subdivider = 0.2;  % s
+%subdivider = 0.2;  % subdivide surface of icosahe
