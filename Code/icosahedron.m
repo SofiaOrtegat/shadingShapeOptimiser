@@ -14,4 +14,4 @@ mz = [d;d;-d;-d;d;d;-d;-d;c;-c;c;-c;a;a;-a;-a;0;0;0;0]/3;
 %subdivider = 0.2;  % subdivide surface of icosahedron, smaller -> finer
 result = [];
 for m = 1:20
-    d
+    d = (x-mx(m)).^2 + (y-my(m)).^2 + (
