@@ -15,4 +15,5 @@ mz = [d;d;-d;-d;d;d;-d;-d;c;-c;c;-c;a;a;-a;-a;0;0;0;0]/3;
 result = [];
 for m = 1:20
     d = (x-mx(m)).^2 + (y-my(m)).^2 + (z-mz(m)).^2;
-    [~, 
+    [~, order] = sort(d);
+    p
