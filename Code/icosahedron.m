@@ -16,4 +16,4 @@ result = [];
 for m = 1:20
     d = (x-mx(m)).^2 + (y-my(m)).^2 + (z-mz(m)).^2;
     [~, order] = sort(d);
-    p
+    p1 = [mx(m), my(m), mz(m)];
