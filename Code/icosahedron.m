@@ -19,4 +19,4 @@ for m = 1:20
     p1 = [mx(m), my(m), mz(m)];
     p2 = [x(order(1)), y(order(1)), z(order(1))];
     p3 = [x(order(2)), y(order(2)), z(order(2))];
-    result = [resul
+    result = [result; subdivide(p1, p
