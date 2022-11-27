@@ -24,4 +24,5 @@ for m = 1:20
     p3 = [x(order(3)), y(order(3)), z(order(3))];
     result = [result; subdivide(p1, p2, p3, subdivider)];
     
-    p2 = [x(order(2)), y(order(2)), z(or
+    p2 = [x(order(2)), y(order(2)), z(order(2))];
+    result = [result;
