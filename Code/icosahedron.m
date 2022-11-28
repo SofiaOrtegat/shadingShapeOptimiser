@@ -27,4 +27,5 @@ for m = 1:20
     p2 = [x(order(2)), y(order(2)), z(order(2))];
     result = [result; subdivide(p1, p2, p3, subdivider)];
     
-    diagnoal = sqrt(diag((result*r
+    diagnoal = sqrt(diag((result*result')));
+    res
