@@ -25,4 +25,6 @@ for m = 1:20
     result = [result; subdivide(p1, p2, p3, subdivider)];
     
     p2 = [x(order(2)), y(order(2)), z(order(2))];
-    result = [result; subdivide(p1, p2, p3, sub
+    result = [result; subdivide(p1, p2, p3, subdivider)];
+    
+    diag
