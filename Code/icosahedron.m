@@ -28,4 +28,4 @@ for m = 1:20
     result = [result; subdivide(p1, p2, p3, subdivider)];
     
     diagnoal = sqrt(diag((result*result')));
-    res
+    result(:,1) = result(:,1)./
