@@ -30,4 +30,6 @@ for m = 1:20
     diagnoal = sqrt(diag((result*result')));
     result(:,1) = result(:,1)./diagnoal;
     result(:,2) = result(:,2)./diagnoal;
-    result(:,3) = re
+    result(:,3) = result(:,3)./diagnoal;
+end
+
