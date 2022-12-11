@@ -33,3 +33,5 @@ for m = 1:20
     result(:,3) = result(:,3)./diagnoal;
 end
 
+% half plane
+s = size(r
