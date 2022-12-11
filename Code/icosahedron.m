@@ -37,4 +37,5 @@ end
 s = size(result, 1);
 output = [];
 for i = 1:s
-   if res
+   if result(i,3)>=0
+       output 
