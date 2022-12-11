@@ -35,4 +35,6 @@ end
 
 % half plane
 s = size(result, 1);
-output = [
+output = [];
+for i = 1:s
+   if res
