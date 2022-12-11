@@ -34,4 +34,5 @@ for m = 1:20
 end
 
 % half plane
-s = size(r
+s = size(result, 1);
+output = [
