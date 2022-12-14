@@ -38,4 +38,5 @@ s = size(result, 1);
 output = [];
 for i = 1:s
    if result(i,3)>=0
-       output 
+       output = [output; result(i,:)];
+   end
