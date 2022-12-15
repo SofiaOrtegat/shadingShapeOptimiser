@@ -40,3 +40,5 @@ for i = 1:s
    if result(i,3)>=0
        output = [output; result(i,:)];
    end
+end
+%output = unique(output,
