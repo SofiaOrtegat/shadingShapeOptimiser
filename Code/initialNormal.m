@@ -1,1 +1,1 @@
-function surfaceNo
+function surfaceNormal = initialNormal(x,
