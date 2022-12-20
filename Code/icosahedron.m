@@ -42,4 +42,5 @@ for i = 1:s
    end
 end
 %output = unique(output,'rows');
-%scatter3(output(:,1), output(:,2), output(:,3))
+%scatter3(output(:,1), output(:,2), output(:,3));
+end
