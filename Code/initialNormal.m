@@ -1,2 +1,2 @@
 function surfaceNormal = initialNormal(x, y, z)
-[imgIntensity
+[imgIntensity, lights, denominator
