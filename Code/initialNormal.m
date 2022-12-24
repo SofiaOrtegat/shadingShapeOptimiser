@@ -1,2 +1,2 @@
 function surfaceNormal = initialNormal(x, y, z)
-[imgIntensity, lights, denominatorLight] = preProcessData(x, y, 
+[imgIntensity, lights, denominatorLight] = preProcessData(x, y, z); % imgIntensity here
