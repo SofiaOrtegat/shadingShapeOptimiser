@@ -4,4 +4,5 @@ function surfaceNormal = initialNormal(x, y, z)
 matrixToFindNormal = zeros(s, 3);
 surfaceNormal = zeros(M, N, 3);
 tic;
-for i
+for i = 1:M
+    for j = 1:N
