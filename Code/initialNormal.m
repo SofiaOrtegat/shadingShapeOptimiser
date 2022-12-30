@@ -7,4 +7,4 @@ tic;
 for i = 1:M
     for j = 1:N
         for k = 1:s
-           matrixToFin
+           matrixToFindNormal(k, :) = [lights(k,1
