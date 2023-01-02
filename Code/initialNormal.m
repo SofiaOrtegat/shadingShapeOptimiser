@@ -7,4 +7,5 @@ tic;
 for i = 1:M
     for j = 1:N
         for k = 1:s
-           matrixToFindNormal(k, :) = [lights(k,1)-imgIntensity(i,j,k)*denominator
+           matrixToFindNormal(k, :) = [lights(k,1)-imgIntensity(i,j,k)*denominatorLight(1),...
+              
