@@ -10,4 +10,5 @@ for i = 1:M
            matrixToFindNormal(k, :) = [lights(k,1)-imgIntensity(i,j,k)*denominatorLight(1),...
                                         lights(k,2)-imgIntensity(i,j,k)*denominatorLight(2),...
                                          lights(k,3)-imgIntensity(i,j,k)*denominatorLight(3)];
-  
+        end
+        
