@@ -11,4 +11,4 @@ for i = 1:M
                                         lights(k,2)-imgIntensity(i,j,k)*denominatorLight(2),...
                                          lights(k,3)-imgIntensity(i,j,k)*denominatorLight(3)];
         end
-        
+        [~,~,v]=svd(matrixToFin
