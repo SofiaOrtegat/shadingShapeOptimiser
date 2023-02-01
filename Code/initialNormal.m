@@ -12,4 +12,5 @@ for i = 1:M
                                          lights(k,3)-imgIntensity(i,j,k)*denominatorLight(3)];
         end
         [~,~,v]=svd(matrixToFindNormal);
-        tem
+        temp = v(:,end);
+        if 
