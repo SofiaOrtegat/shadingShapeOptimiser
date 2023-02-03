@@ -14,4 +14,5 @@ for i = 1:M
         [~,~,v]=svd(matrixToFindNormal);
         temp = v(:,end);
         if temp(3)<0
-            te
+            temp = -temp;
+        
