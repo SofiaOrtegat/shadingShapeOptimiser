@@ -18,3 +18,6 @@ for i = 1:M
         end
         surfaceNormal(i,j,:)=temp;
     end
+end
+toc;
+end
