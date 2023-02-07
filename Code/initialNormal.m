@@ -15,4 +15,5 @@ for i = 1:M
         temp = v(:,end);
         if temp(3)<0
             temp = -temp;
-        
+        end
+        surfaceNo
