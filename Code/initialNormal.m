@@ -16,4 +16,5 @@ for i = 1:M
         if temp(3)<0
             temp = -temp;
         end
-        surfaceNo
+        surfaceNormal(i,j,:)=temp;
+    end
