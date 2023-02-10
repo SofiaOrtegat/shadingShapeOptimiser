@@ -1,1 +1,1 @@
-function [result, inde
+function [result, index, uniqueIndex] 
