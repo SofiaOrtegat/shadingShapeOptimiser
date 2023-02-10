@@ -11,3 +11,20 @@ for i = 1:s
    if index(i)<10
        path = strcat(absolutePath, '000', num2str(index(i)), '.bmp');
    elseif index(i)<100
+       path = strcat(absolutePath, '00', num2str(index(i)), '.bmp');
+   elseif index(i)<1000
+       path = strcat(absolutePath, '0', num2str(index(i)), '.bmp');
+   else
+       path = strcat(absolutePath, num2str(index(i)), '.bmp');
+   end
+   img = imread(path);
+   img = rgb2gray(img);
+   imageMatrices(:, :, i) = double(img);
+end
+
+% find denominator image
+percentile = 0.9;
+intensitySum = sum(sum(imageMatrices,1),2);
+[~,idx] = sort(intensitySum);
+denominatorImage = imageMatrices(:,:,idx(floor(percentile*s)));
+imshow(uint8(denominatorImage));
