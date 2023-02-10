@@ -28,3 +28,12 @@ intensitySum = sum(sum(imageMatrices,1),2);
 [~,idx] = sort(intensitySum);
 denominatorImage = imageMatrices(:,:,idx(floor(percentile*s)));
 imshow(uint8(denominatorImage));
+
+for i = 1:s
+    % divide denominator image
+    imageMatrices(:,:,i) = imageMatrices(:,:,i)./denominatorImage;
+end
+imageMatrices(:, :, idx(floor(percentile*s))) = [];
+denoLight = lightDirections(idx(floor(percentile*s)), :);
+lightDirections(idx(floor(percentile*s)), :) = [];
+end
