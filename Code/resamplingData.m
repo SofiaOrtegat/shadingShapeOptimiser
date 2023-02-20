@@ -1,1 +1,2 @@
-function [result, index, uniqueIndex] 
+function [result, index, uniqueIndex] = resamplingData(x, y, z)
+s
