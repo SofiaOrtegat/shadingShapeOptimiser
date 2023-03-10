@@ -4,4 +4,5 @@ subSamples = icosahedron(0.2); % subdivided icosahedron
 s = size(subSamples, 1);
 result = [];
 index = [];
-for i = 1
+for i = 1:s
+    d = (x-subSa
