@@ -5,4 +5,4 @@ s = size(subSamples, 1);
 result = [];
 index = [];
 for i = 1:s
-    d = (x-subSa
+    d = (x-subSamples(i, 1)).^2
