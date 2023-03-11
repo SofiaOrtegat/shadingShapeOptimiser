@@ -5,4 +5,4 @@ s = size(subSamples, 1);
 result = [];
 index = [];
 for i = 1:s
-    d = (x-subSamples(i, 1)).^2 + (y-subSamples(i, 2)).^2 + 
+    d = (x-subSamples(i, 1)).^2 + (y-subSamples(i, 2)).^2 + (z-subSamples(i, 3
