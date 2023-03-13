@@ -9,3 +9,5 @@ for i = 1:s
     [~, order] = sort(d);
     result = [result; [x(order(1)), y(order(1)), z(order(1))]];
     index = [index; order(1)];
+end
+%scatter3(result(:
