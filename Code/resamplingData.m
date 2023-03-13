@@ -10,4 +10,4 @@ for i = 1:s
     result = [result; [x(order(1)), y(order(1)), z(order(1))]];
     index = [index; order(1)];
 end
-%scatter3(result(:
+%scatter3(result(:,1), result(:,2), result(:,3))
