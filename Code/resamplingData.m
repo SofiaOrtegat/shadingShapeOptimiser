@@ -7,4 +7,5 @@ index = [];
 for i = 1:s
     d = (x-subSamples(i, 1)).^2 + (y-subSamples(i, 2)).^2 + (z-subSamples(i, 3)).^2;
     [~, order] = sort(d);
-    result = [result; [x(order(1)), y(order(1)), z(
+    result = [result; [x(order(1)), y(order(1)), z(order(1))]];
+    index
