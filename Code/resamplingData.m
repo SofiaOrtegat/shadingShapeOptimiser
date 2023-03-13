@@ -11,4 +11,5 @@ for i = 1:s
     index = [index; order(1)];
 end
 %scatter3(result(:,1), result(:,2), result(:,3));
-uniqueIndex = unique(
+uniqueIndex = unique(index); %delete duplicate
+end
