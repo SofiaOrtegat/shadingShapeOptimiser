@@ -1,2 +1,3 @@
 function recsurf = shapeFromShapelets(surfaceNormal)
-[M, N, ~] = size(surfaceN
+[M, N, ~] = size(surfaceNormal);
+slant = zeros
