@@ -1,1 +1,2 @@
-function recsurf = shapeF
+function recsurf = shapeFromShapelets(surfaceNormal)
+[M, N, 
