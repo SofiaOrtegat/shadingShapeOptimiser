@@ -1,2 +1,2 @@
 function recsurf = shapeFromShapelets(surfaceNormal)
-[M, N, 
+[M, N, ~] = size(surfaceN
