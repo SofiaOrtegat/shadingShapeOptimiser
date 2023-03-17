@@ -5,4 +5,5 @@ tilt = zeros(M, N);
 for i = 1:M
     for j = 1:N
         x = surfaceNormal(i, j ,1);
-        y = surfaceNorm
+        y = surfaceNormal(i, j ,2);
+        z
