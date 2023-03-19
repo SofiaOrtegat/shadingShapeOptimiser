@@ -7,4 +7,4 @@ for i = 1:M
         x = surfaceNormal(i, j ,1);
         y = surfaceNormal(i, j ,2);
         z = surfaceNormal(i, j ,3);
-        slant(i, j
+        slant(i, j) = x;%-atan(sqrt(x^
