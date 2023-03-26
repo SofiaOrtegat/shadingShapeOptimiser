@@ -8,4 +8,5 @@ for i = 1:M
         y = surfaceNormal(i, j ,2);
         z = surfaceNormal(i, j ,3);
         slant(i, j) = x;%-atan(sqrt(x^2+y^2)/z);
-        tilt(i, j)  = y;%acos(x/sqrt(x^2
+        tilt(i, j)  = y;%acos(x/sqrt(x^2+y^2))+pi*(y<0);
+    end
