@@ -11,4 +11,5 @@ for i = 1:M
         tilt(i, j)  = y;%acos(x/sqrt(x^2+y^2))+pi*(y<0);
     end
 end
-recsurf = shapeletsurf(slant, tilt, 
+recsurf = shapeletsurf(slant, tilt, 6, 3, 2);
+surface(2*rec
