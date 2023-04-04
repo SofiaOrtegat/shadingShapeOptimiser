@@ -12,4 +12,5 @@ for i = 1:M
     end
 end
 recsurf = shapeletsurf(slant, tilt, 6, 3, 2);
-surface(2*rec
+surface(2*recsurf);
+end
