@@ -1,1 +1,1 @@
-function res
+function result = subdivide(p1, p2, p
